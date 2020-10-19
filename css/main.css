@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
+  font-size: 1.125rem;
   font-family: Overpass, sans-serif;
   color: #fff;
 
@@ -23,11 +24,12 @@ html {
 body {
   background-image: linear-gradient(#ff9500, #ff5e3a);
   margin: 0;
-  padding: 6vmin;
+  padding: 1.3rem;
 }
 
-.space-bubbles {
-  padding: 1rem;
+h2 {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 a {
@@ -35,21 +37,20 @@ a {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  stroke:
 }
 
 a:hover,
 a:focus {
-  color: #ff5e3a;
+  color: rgba(255, 255, 255, .7);
 }
 
 .icon {
-  height: 8em;
-  width: 8em;
+  height: 7rem;
+  width: 7rem;
+  margin-top: 1rem;
 }
 
 .icon svg {
-  left: 0;
   height: 100%;
   width: 100%;
   fill: currentColor;
@@ -59,54 +60,65 @@ a:focus {
   fill: #ff9500;
 }
 
-h3 {
-  text-align: center;
-}
-
-p {
-  font-size: 1.125rem;
-  font-style: normal;
-}
-
-
 .btn {
-  display: inline-block;
-  padding: .4em .75em .3em;
+  text-align: center;
+  padding: .9rem;
 
-  background-color: #ff5e3a;
-  border-radius: 8px;
-  border:solid #fff;
+  background-color: transparent;
+  border: 3px solid #fff;
+  vertical-align: middle;
 
   color: #fff;
   font-size: 1.125rem;
   text-decoration: none;
 }
 
-.btn:hover {
-  background-color: #ff9500;
-  border-color: rgba(255, 255, 255, .7);
-  color: #fff
+h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 6vmin;
+  text-align: center;
 }
+
+p {
+  margin: 0;
+  font-size: .9rem;
+}
+
 @media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6vmin;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    padding: 0 1rem;
   }
 
-  .space-bubbles {
-    grid-column: 1;
+  h2 {
+    text-align: center;
+    padding: 1.1rem;
   }
 
-  .super-domes {
-    grid-column: 2;
+  h3 {
+    text-align: left;
   }
 
-  .mecha-stilts {
-    grid-column: 3;
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
   }
 
+  h2 {
+    padding: 1.6rem;
+  }
 }
